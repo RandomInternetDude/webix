@@ -15,18 +15,18 @@ export default class InformationView extends JetView {
 			rows:[
 				{
 					view:"text", name:"fname",
-					label:_("First name"), labelPosition:"top",
-					placeholder:_("First name"),
+					label:_("Union name"), labelPosition:"top",
+					placeholder:_("Union name"),
 					invalidMessage:_("A name is required")
 				},
 				{
 					view:"text", name:"lname",
-					label:_("Last name"), labelPosition:"top",
-					placeholder:_("Last name")
+					label:_("CRS"), labelPosition:"top",
+					placeholder:_("CRS")
 				},
 				{
 					view:"datepicker", name:"birthday",
-					label:_("Birthday"), labelPosition:"top",
+					label:_("Last Provision"), labelPosition:"top",
 					placeholder:_("Click to select"),
 					format:webix.Date.dateToStr("%d %M %Y")
 				}
@@ -36,7 +36,7 @@ export default class InformationView extends JetView {
 		const position = {
 			view:"richselect", name:"position",
 			localId:"position:combo",
-			label:_("Position"), labelPosition:"top",
+			label:_("Card Processor"), labelPosition:"top",
 			placeholder:_("Click to select"),
 			options:[]
 		};
